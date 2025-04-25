@@ -1,0 +1,48 @@
+nome varchar(20),
+temp varchar(10),
+cobertura varchar(10),
+da_cria varchar(3),
+ser_aquatico varchar(3),
+ser_aereo varchar(3),
+possui_pernas varchar(3),
+hiberna varchar(3),
+classe varchar(8),
+
+mysql> show databases;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mysql              |
+| performance_schema |
+| sakila             |
+| sys                |
+| vertebrados        |
+| world              |
++--------------------+
+7 rows in set (0.00 sec)
+
+mysql> use vertebrados
+Database changed
+mysql> desc vertebrados;
++---------------+-------------+------+-----+---------+-------+
+| Field         | Type        | Null | Key | Default | Extra |
++---------------+-------------+------+-----+---------+-------+
+| nome          | varchar(20) | YES  |     | NULL    |       |
+| temp          | varchar(10) | YES  |     | NULL    |       |
+| cobertura     | varchar(10) | YES  |     | NULL    |       |
+| da_cria       | varchar(3)  | YES  |     | NULL    |       |
+| ser_aquatico  | varchar(3)  | YES  |     | NULL    |       |
+| ser_aereo     | varchar(3)  | YES  |     | NULL    |       |
+| possui_pernas | varchar(3)  | YES  |     | NULL    |       |
+| hiberna       | varchar(3)  | YES  |     | NULL    |       |
+| classe        | varchar(10) | YES  |     | NULL    |       |
++---------------+-------------+------+-----+---------+-------+
+9 rows in set (0.00 sec)
+
+mysql> select * from vertebrados;
+Empty set (0.01 sec)
+
+mysql> insert into vertebrados (nome, temp, cobertura, da_cria, ser_aquatico, ser_aereo, possui_pernas, hiberna, classe)values ('humano', 'quente', 'cabelo', 'sim', 'nao', 'nao', 'sim', 'nao', 'mamifero');
+
+mysql> select * from vertebrados;
