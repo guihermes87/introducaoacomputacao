@@ -1,0 +1,32 @@
+@relation vertebrados
+
+@attribute nome {humano,piton,salmao,baleia,sapo,dragao_de_komodo,morcego, pomba, gato, leopardo,tubarao, tartaruga, pinguim, porco_espinho, enguia,salamandra} 
+@attribute temp {quente,frio}
+@attribute pele{cabelo, escamas, pelo, nenhuma, espinhos, penas}
+@attribute da_cria{sim,nao}
+@attribute ser_aquatico{nao, sim, semi}
+@attribute ser_aereo{nao, sim}
+@attribute possui_pernas{nao, sim}
+@attribute hiberna{nao, sim}
+@attribute classe{mamifero, reptil, peixe, anfibio, ave}
+
+@data
+humano,quente,cabelo,sim,nao,nao,sim,nao,mamifero
+salmao,frio,escamas,nao,sim,nao,nao,nao,peixe
+baleia,quente,cabelo,sim,sim,nao,nao,nao,mamifero
+sapo,frio,nenhuma,nao,sim,nao,sim,sim,anfibio
+dragao_de_komodo,frio,escamas,nao,nao,nao,sim,nao,reptil
+morcego,quente,cabelo,sim,nao,sim,sim,sim,mamifero
+pomba,quente,penas,nao,nao,sim,sim,nao,ave
+gato,quente,pelo,sim,nao,nao,sim,nao,mamifero
+leopardo,frio,pelo,sim,sim,nao,sim,nao,mamifero
+tubarao,frio,escamas,nao,sim,nao,nao,nao,peixe
+tartaruga,frio,escamas,nao,semi,nao,sim,nao,reptil
+pinguim,quente,penas,nao,semi,nao,sim,nao,ave
+porco_espinho,quente,espinhos,sim,nao,nao,sim,sim,mamifero
+enguia,frio,escamas,nao,sim,nao,nao,nao,peixe
+salamandra,frio,nenhuma,nao,semi,nao,sim,sim,anfibio
+
+
+
+
