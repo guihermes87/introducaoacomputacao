@@ -1,6 +1,6 @@
 @relation vertebrados
 
-@attribute nome {humano,piton,salmao,baleia,sapo,dragao_de_komodo,morcego, pomba, gato, leopardo,tubarao, tartaruga, pinguim, porco_espinho, enguia,salamandra} 
+@attribute nome {humano,piton,salmao,baleia,sapo,dragao_de_komodo,morcego, pomba, gato, leopardo,tubarao, tartaruga, pinguim, porco_espinho, enguia,salamandra,gila} 
 @attribute temp {quente,frio}
 @attribute pele{cabelo, escamas, pelo, nenhuma, espinhos, penas}
 @attribute da_cria{sim,nao}
@@ -12,6 +12,7 @@
 
 @data
 humano,quente,cabelo,sim,nao,nao,sim,nao,mamifero
+piton,frio,escamas,nao,nao,nao,sim,nao,reptil
 salmao,frio,escamas,nao,sim,nao,nao,nao,peixe
 baleia,quente,cabelo,sim,sim,nao,nao,nao,mamifero
 sapo,frio,nenhuma,nao,sim,nao,sim,sim,anfibio
